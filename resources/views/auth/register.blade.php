@@ -46,7 +46,7 @@
               <!-- Card body -->
               <div class="card-body p-6 d-flex flex-column gap-4">
                 <div>
-                  <a href=""><img src="../assets/images/brand/logo/logo-icon.svg" class="mb-4" alt="logo" /></a>
+                  <a href=""><img src="{{ asset('assets/img/logo.png') }}" class="mb-4" style="width: 100px;" alt="logo" /></a>
                   <div class="d-flex flex-column gap-1">
                     <h1 class="mb-0 fw-bold">Sign up</h1>
                     <span>

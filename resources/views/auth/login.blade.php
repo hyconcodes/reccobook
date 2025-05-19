@@ -10,8 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon/favicon.ico')}}" />
 
     <!-- darkmode js -->
-    <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script>
-
+    <!-- <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script> -->
     <!-- Libs CSS -->
     <link href="{{asset('assets/fonts/feather/feather.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/libs/bootstrap-icons/font/bootstrap-icons.min.css')}}" rel="stylesheet" />
@@ -46,7 +45,7 @@
                         <!-- Card body -->
                         <div class="card-body p-6 d-flex flex-column gap-4">
                             <div>
-                                <a href="{{url('/')}}"><img src="../assets/images/brand/logo/logo-icon.svg" class="mb-4" alt="logo-icon" /></a>
+                                <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo.png') }}" style="width: 100px;" class="mb-4" alt="logo-icon" /></a>
                                 <div class="d-flex flex-column gap-1">
                                     <h1 class="mb-0 fw-bold">Sign in</h1>
                                     <span>
