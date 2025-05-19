@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Verify Code</title>
+    <title>Edu Resource Recommender - Verify Code</title>
     <style>
         body {
             background-color: #f8fafc;
@@ -96,7 +96,7 @@
 
 <body>
     <div class="container">
-        <h2>Verify Your ReccoBook Account</h2>
+        <h2>Verify Your Edu Resource Recommender Account</h2>
 
         @if(session('success'))
         <div class="alert alert-success">

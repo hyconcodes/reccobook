@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
 
     <link rel="canonical" href="" />
-    <title>Sign up | Reccobook</title>
+    <title>Sign up | Edu Resource Recommender</title>
   </head>
 
   <body>
@@ -137,7 +137,7 @@
           </div>
         </div>
       </section>
-      <div class="position-absolute bottom-0 m-4">
+      <div class="position-absolute bottom-0 m-4 d-none">
         <div class="dropdown">
           <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
             <i class="bi theme-icon-active"></i>

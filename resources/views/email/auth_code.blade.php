@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Verify Your Account</title>
+    <title>Edu Resource Recommender - Verify Your Account</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,8 +64,8 @@
 
 <body>
     <div class="container">
-        <h1>Welcome to ReccoBook! 📚✨</h1>
-        <h2>Your Personalized Student Resource Hub</h2>
+        <h1>Welcome to Edu Resource Recommender! 📚✨</h1>
+        <h2>Your Student Resource Hub</h2>
 
         <p>Thank you for signing up! To keep your account secure, please verify your email using the code below:</p>
 
@@ -76,7 +76,7 @@
         <p>If you didn't request this code, you can safely ignore this message.</p>
 
         <div class="footer">
-            &copy; {{ date('Y') }} ReccoBook. All rights reserved.
+            &copy; {{ date('Y') }} Edu Resource Recommender. All rights reserved.
         </div>
     </div>
 </body>

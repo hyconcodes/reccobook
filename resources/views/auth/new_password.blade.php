@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Reset password</title>
+    <title>Edu Resource Recommender - Reset password</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon/favicon.ico')}}" />
 
     <!-- darkmode js -->

@@ -16,7 +16,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@5.1.91/wasm/openjpeg_nowasm_fallback.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
-    <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script>
+    <!-- <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script> -->
 
     <!-- Libs CSS -->
     <link href="{{asset('assets/fonts/feather/feather.css')}}" rel="stylesheet" />
@@ -29,7 +29,7 @@
     <!-- <link rel="canonical" href="course-category" /> -->
     <link rel="stylesheet" href="{{asset('assets/libs/tiny-slider/dist/tiny-slider.css')}}" />
 
-    <title>Reccobook || Home</title>
+    <title>Edu Resource Recommender || Home</title>
 </head>
 
 <body class="bg-white">

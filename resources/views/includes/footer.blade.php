@@ -5,10 +5,10 @@
             <div class="col-xl-3 col-lg-12 col-md-6 col-12">
                 <div class="d-flex flex-column gap-4">
                     <div>
-                    <a class="navbar-brand fw-bold fs-2 text-primary" href="{{ url('home') }}">Reccobook</a>
+                    <a class="navbar-brand fw-bold fs-2 text-primary" href="{{ url('home') }}">Edu Resource Recommender</a>
                     </div>
                     <p class="mb-0">
-                    Reccobook a digital platform providing personalized book and video recommendations based on user interests.
+                    Edu Resource Recommender a digital platform providing personalized book and video recommendations based on user interests.
                     </p>
                     <div class="d-flex gap-2">
                         <a
@@ -116,7 +116,7 @@
                             <a href="#!" class="nav-link">Blog</a>
                         </li>
                         <li>
-                            <a href="#!" class="nav-link">Reccobook Business</a>
+                            <a href="#!" class="nav-link">Edu Resource Recommender Business</a>
                         </li>
                     </ul>
                 </div>
@@ -154,7 +154,7 @@
                             </li>
                             <li>
                                 Email:
-                                <span class="fw-semibold">reccobook@gmail.com</span>
+                                <span class="fw-semibold">eduresourcerecommender@gmail.com</span>
                             </li>
                         </ul>
                     </div>
@@ -186,7 +186,7 @@
                                 );
                         </script>
                     </span>
-                    <a href="https://wa.me/2348147177291" target="_blank">Reccobook. Developed by Hyconcode</a>
+                    <a href="https://wa.me/2348147177291" target="_blank">Edu Resource Recommender.</a>
                 </span>
             </div>
             <!-- Links -->

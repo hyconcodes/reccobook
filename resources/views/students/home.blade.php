@@ -49,7 +49,7 @@
                 <div class="col-lg-6 col-12 d-none d-lg-block">
                     <div class="text-center position-relative">
                         <img
-                            src="../assets/images/course/woman-hero.png"
+                            src="{{ asset('assets/img/laptop.png') }}"
                             alt="hero"
                             class="position-relative z-3" />
                         <div class="position-absolute top-0 end-0 bottom-0">
@@ -110,7 +110,7 @@
                     {{ $resources->links() }}
                 </div>
 
-                <h5 class="text-primary text-center">{{$resources->count() == 0 ? "We don't have courses for your preferences for now..." : ''}}</h5>
+                <h5 class="text-primary text-center">{{$resources->count() == 0 ? "We don't have courses for your department for now..." : ''}}</h5>
 
             </div>
         </div>

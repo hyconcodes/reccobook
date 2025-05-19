@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Forgot password</title>
+    <title>Edu Resource Recommender - Forgot password</title>
     <style>
         body {
             background-color: #f8fafc;

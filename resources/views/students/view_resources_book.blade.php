@@ -25,7 +25,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <h1 class="fw-semibold mb-2">{{ $book->title }}</h1>
                                 <a href="#" data-bs-toggle="tooltip" data-placement="top" aria-label="Add to Bookmarks" data-bs-original-title="Add to Bookmarks">
-                                    <i class="fe fe-bookmark fs-4 fs-3 text-inherit"></i>
+                                    <!-- <i class="fe fe-bookmark fs-4 fs-3 text-inherit"></i> -->
                                 </a>
                             </div>
                             <div class="d-flex justify-content-between">
@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="#" class="btn btn-outline-secondary btn-sm">Follow</a>
+                                    <!-- <a href="#" class="btn btn-outline-secondary btn-sm">Follow</a> -->
                                 </div>
                             </div>
                         </div>

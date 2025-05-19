@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Reset Your Account Password</title>
+    <title>Edu Resource Recommender - Reset Your Account Password</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +65,7 @@
 <body>
     <div class="container">
         <h1>Reset Your Password 🔒</h1>
-        <h2>ReccoBook – Secure Student Access</h2>
+        <h2>Edu Resource Recommender – Secure Student Access</h2>
 
         <p>We received a request to reset your password. Use the code below to proceed:</p>
 
@@ -76,7 +76,7 @@
         <p>If you didn’t request a password reset, you can safely ignore this email. Your account will remain secure.</p>
 
         <div class="footer">
-            &copy; {{ date('Y') }} ReccoBook. All rights reserved.
+            &copy; {{ date('Y') }} Edu Resource Recommender. All rights reserved.
         </div>
     </div>
 

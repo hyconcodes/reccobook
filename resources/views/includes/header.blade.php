@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container px-0">
-        <a class="navbar-brand fw-bold" href="{{ url('home') }}">Reccobook</a>
+        <a class="navbar-brand fw-bold" href="{{ url('home') }}">Edu Resource Recommender</a>
         <!-- Mobile view nav wrap -->
         <div class="ms-auto d-flex align-items-center order-lg-3">
             <div class="d-flex gap-2 align-items-center">
@@ -94,7 +94,7 @@
                 <div class="modal-body">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h3 class="modal-title" id="langaugeModalLabel">
-                            Choose your interests
+                            Select your department
                         </h3>
                         <button
                             type="button"

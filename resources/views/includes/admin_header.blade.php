@@ -1,9 +1,9 @@
       <!-- Sidebar -->
-      <nav class="navbar-vertical navbar">
+      <nav class="navbar-vertical navbar" style="background-color: #003b00;">
           <div class="vh-100" data-simplebar>
               <!-- Brand logo -->
               <a class="navbar-brand" href="">
-                  <h1 class="fw-bold text-primary">Reccobook</h1>
+                  <h1 class="fw-bold text-primary fs-4">Edu Resource Recommender</h1>
               </a>
               <!-- Navbar nav -->
               <ul class="navbar-nav flex-column" id="sideNavbar">
@@ -66,7 +66,7 @@
                       <div class="nav-divider"></div>
                   </li>
                   <!-- Card -->
-                  <div class="card bg-dark-primary shadow-none text-center mx-4 my-8 border-0">
+                  <div class="card bg-dark-primary shadow-none text-center mx-4 my-8 border-0 d-none">
                       <div class="card-body py-6">
                           <img src="{{asset('assets/images/background/giftbox.png')}}" alt="" />
                           <div class="mt-4">

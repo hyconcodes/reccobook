@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ReccoBook - Verify Code</title>
+    <title>Edu Resource Recommender - Verify Code</title>
     <style>
         body {
             background-color: #f8fafc;

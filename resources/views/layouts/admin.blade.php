@@ -11,7 +11,7 @@
     <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/9599b765/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
 
     <!-- darkmode js -->
-    <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script>
+    <!-- <script src="{{asset('assets/js/vendors/darkMode.js')}}"></script> -->
 
     <!-- Libs CSS -->
     <link href="{{asset('assets/fonts/feather/feather.css')}}" rel="stylesheet" />
@@ -31,7 +31,7 @@
         href="{{asset('assets/libs/dragula/dist/dragula.min.css')}}"
         rel="stylesheet " />
 
-    <title>Reccobook || Admin Dashboard</title>
+    <title>Edu Resource Recommender || Admin Dashboard</title>
     <script src="https://www.youtube.com/iframe_api" async=""></script>
 </head>
 
