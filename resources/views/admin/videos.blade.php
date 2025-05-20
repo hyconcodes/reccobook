@@ -81,7 +81,7 @@
                     <thead class="table-light">
                       <tr>
                         <th>Videos</th>
-                        <th>Catergory</th>
+                        <th>Department</th>
                         <th>Action</th>
                         <th></th>
                       </tr>

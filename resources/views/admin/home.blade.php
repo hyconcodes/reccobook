@@ -138,7 +138,7 @@
               <div class="card-body d-flex flex-column gap-3">
                 <div class="d-flex align-items-center justify-content-between lh-1">
                   <div>
-                    <span class="fs-6 text-uppercase fw-semibold ls-md">Categories</span>
+                    <span class="fs-6 text-uppercase fw-semibold ls-md">Department</span>
                   </div>
                   <div>
                     <span class="bi bi-bookmark-check fs-3 text-primary"></span>
@@ -151,7 +151,7 @@
                       <i class="fe fe-trending-up me-1"></i>
                       +{{Catergory::count()}}
                     </span>
-                    <span class="fw-medium">Catergory</span>
+                    <span class="fw-medium">Department</span>
                   </div>
                 </div>
               </div>
@@ -200,7 +200,7 @@
                     <thead class="table-light">
                       <tr>
                         <th>Books</th>
-                        <th>Catergory</th>
+                        <th>Department</th>
                         <th>Action</th>
                         <th></th>
                       </tr>

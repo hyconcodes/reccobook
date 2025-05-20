@@ -41,7 +41,7 @@
                                   <a class="nav-link " href="{{ url('videos_resources') }}">Videos</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link " href="{{url('create_resources_catergory')}}">Resources Category</a>
+                                  <a class="nav-link " href="{{url('create_resources_catergory')}}">Department</a>
                               </li>
                           </ul>
                       </div>

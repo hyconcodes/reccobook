@@ -8,9 +8,9 @@
                     <div class="d-lg-flex align-items-center justify-content-between">
                         <!-- Content -->
                         <div class="mb-4 mb-lg-0">
-                            <h1 class="text-white mb-1">Add New Catergory</h1>
+                            <h1 class="text-white mb-1">Add New Department</h1>
                             <p class="mb-0 text-white lead">
-                                Create new Catergory.
+                                Create new Department.
                             </p>
                         </div>
                         <div>
@@ -35,20 +35,20 @@
                                 <!-- Card -->
                                 <div class="card my-3">
                                     <div class="card-header border-bottom px-4 py-3">
-                                        <h4 class="mb-0">New Catergory</h4>
+                                        <h4 class="mb-0">New Department</h4>
                                     </div>
                                     
                                     <!-- Card body -->
                                     <div class="card-body">
                                         <div class="mb-3">
-                                            <label for="addCategory" class="form-label">Resources Catergory</label>
+                                            <label for="addCategory" class="form-label">Department</label>
                                             @error('catergory') <p class="text-danger">{{ $message }}</p> @enderror
                                             <input
                                                 id="addCategory"
                                                 name="catergory"
                                                 class="form-control"
                                                 type="text"
-                                                placeholder="Resources Catergory " />
+                                                placeholder="Department " />
                                             <small>Add your catergory...</small>
                                         </div>
                                         <!-- Button -->
@@ -65,7 +65,7 @@
                         <!-- LIST ALL CATERGORY? -->
                         <div class="card mb-3">
                             <div class="card-header border-bottom px-4 py-3">
-                                <h4 class="mb-0">All Catergory</h4>
+                                <h4 class="mb-0">All Department</h4>
                             </div>
 
                             <div class="card-body">
