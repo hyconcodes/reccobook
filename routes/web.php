@@ -10,6 +10,7 @@ use App\Models\Catergory;
 use App\Models\Interest;
 use App\Models\Video;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,11 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('auth.login');
 // });
+
+Route::get('/storage-link', function() {
+    Artisan::call('storage:link');
+    return 'Storage link has been created';
+});
 Route::post('logout', [AuthController::class, 'destroy'])->name('logout');
 Route::get('/', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'register']);
