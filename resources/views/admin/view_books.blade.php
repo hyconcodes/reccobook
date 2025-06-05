@@ -56,6 +56,10 @@
               <h5 class="m-5"><span class="fw-bold text-primary">Book title:</span> {{$book->title}}</h5>
               <h5 class="m-5"><span class="fw-bold text-primary">Book Category:</span> {{$book->catergory->name}}</h5>
               <hr>
+              <p style="color: white;">{{ asset('storage/' . $book->path) }}</p>
+              <!-- <iframe src="{{url('storage/app/public/' . $book->path)}}#toolbar=0&navpanes=0&scrollbar=0" width="100%"
+                height="800px"
+                style="border: none;" frameborder="0"></iframe> -->
               <iframe src="{{asset('storage/' . $book->path)}}#toolbar=0&navpanes=0&scrollbar=0" width="100%"
                 height="800px"
                 style="border: none;" frameborder="0"></iframe>
