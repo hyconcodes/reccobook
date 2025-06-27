@@ -53,6 +53,9 @@
                             <a class="dropdown-item" href="{{ url('home') }}">Courses</a>
                         </li>
                         <li>
+                            <a class="dropdown-item" href="{{ route('bookmarks') }}">My Bookmark</a>
+                        </li>
+                        <li>
                             <hr class="mx-3" />
                         </li>
                         <li>

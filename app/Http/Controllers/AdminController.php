@@ -6,6 +6,7 @@ use App\Models\Books;
 use App\Models\Catergory;
 use App\Models\Video;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -35,9 +36,9 @@ class AdminController extends Controller
     public function viewBook($id)
     {
         $book = Books::with('catergory')->findOrFail($id);
-        // dd($book);
         if ($book) {
-            return view('admin.view_books', ['book' => $book]);
+            $url = Storage::url($book->path);
+            return view('admin.view_books', ['book' => $book, 'pdf_url' => $url]);
         }
     }
     public function viewVideo($id)

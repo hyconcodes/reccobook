@@ -4,6 +4,7 @@
     <!--Hero Section-->
     <section class="p-lg-5 py-7">
         <div class="container">
+            @include('includes.action_messges')
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12 mb-5">
                     <div class="rounded-3 position-relative w-100 d-block overflow-hidden p-0" style="height: 600px">
@@ -50,7 +51,13 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <!-- <a href="#" class="btn btn-outline-secondary btn-sm">Follow</a> -->
+                                    <a href="{{ route('bookmark.video', $video->id) }}" data-bs-toggle="tooltip"
+                                        data-placement="top"
+                                        aria-label="{{ $isBookmarked ? 'Remove from Bookmarks' : 'Add to Bookmarks' }}"
+                                        data-bs-original-title="{{ $isBookmarked ? 'Remove from Bookmarks' : 'Add to Bookmarks' }}">
+                                        <i
+                                            class="bi {{ $isBookmarked ? 'bi-bookmark-fill' : 'bi-bookmark' }} fs-4 fs-3 text-inherit {{ $isBookmarked ? 'text-primary' : '' }}"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>

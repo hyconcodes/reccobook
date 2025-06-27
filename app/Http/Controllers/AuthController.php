@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Mail\AuthCodeMail;
+use App\Models\Bookmark;
+use App\Models\Catergory;
+use App\Models\Interest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -162,5 +165,32 @@ class AuthController extends Controller
 
         $request->session()->regenerateToken();
         return redirect('/');
+    }
+
+    public function index()
+    {
+        $user = Auth::user();
+        $catergories = Catergory::all();
+        $hasInterests = Interest::where('user_id', $user->id)->first();
+        $userCatergories = Interest::where('user_id', $user->id)->pluck('catergory_id');
+        $userInterest = Catergory::whereIn('id', $userCatergories)->get();
+
+        $bookmarkedBooks = Bookmark::with('book')
+            ->where('user_id', $user->id)
+            ->whereNotNull('book_id')
+            ->get()
+            ->pluck('book');
+
+        $bookmarkedVideos = Bookmark::with('video')
+            ->where('user_id', $user->id)
+            ->whereNotNull('video_id')
+            ->get()
+            ->pluck('video');
+        return view('students.bookmark', [
+            'bookmarkedBooks' => $bookmarkedBooks,
+            'bookmarkedVideos' => $bookmarkedVideos,
+            'catergories' => $catergories,
+            'userInterest' => $userInterest,
+        ]);
     }
 }

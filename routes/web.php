@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\VideoController;
+use App\Models\Bookmark;
 use App\Models\Books;
 use App\Models\Catergory;
 use App\Models\Interest;
@@ -28,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('auth.login');
 // });
 
-Route::get('/storage-link', function() {
+Route::get('/storage-link', function () {
     Artisan::call('storage:link');
     return 'Storage link has been created';
 });
@@ -169,12 +170,18 @@ Route::middleware(['auth', 'role:student'])->group(function () {
         $userCatergories = Interest::where('user_id', $user)->pluck('catergory_id');
         $userInterest = Catergory::whereIn('id', $userCatergories)->get();
         $video = Video::with('catergory')->findOrFail($id);
-        // dd($video);
+        $isBookmarked = false;
+        if ($user) {
+            $isBookmarked = Bookmark::where('user_id', $user)
+                ->where('video_id', $video->id)
+                ->exists();
+        }
         return view('students.view_resources_video', [
             'showModal' => !$hasInterests,
             'catergories' => $catergories,
             'userInterest' => $userInterest,
-            'video' => $video
+            'video' => $video,
+            'isBookmarked' => $isBookmarked
         ]);
     });
     Route::get('view_resources_book/{id}', function ($id) {
@@ -184,11 +191,21 @@ Route::middleware(['auth', 'role:student'])->group(function () {
         $userCatergories = Interest::where('user_id', $user)->pluck('catergory_id');
         $userInterest = Catergory::whereIn('id', $userCatergories)->get();
         $book = Books::with('catergory')->findOrFail($id);
+        $isBookmarked = false;
+        if ($user) {
+            $isBookmarked = Bookmark::where('user_id', $user)
+                ->where('book_id', $book->id)
+                ->exists();
+        }
         return view('students.view_resources_book', [
             'showModal' => !$hasInterests,
             'catergories' => $catergories,
             'userInterest' => $userInterest,
-            'book' => $book
+            'book' => $book,
+            'isBookmarked' => $isBookmarked
         ]);
     });
+    Route::get('/book/bookmark/{book}/save', [BooksController::class, 'bookmarkBook'])->name('bookmark.store');
+    Route::get('/video/bookmark/{video}/save', [VideoController::class, 'bookmarkVideo'])->name('bookmark.video');
+    Route::get('/bookmarks', [AuthController::class, 'index'])->name('bookmarks');
 });

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bookmark;
 use App\Models\Books;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BooksController extends Controller
 {
@@ -25,5 +27,23 @@ class BooksController extends Controller
         return back()->with('success', 'Book uploaded successfully!');
     }
 
-    // public function 
+    public function bookmarkBook(Books $book)
+    {
+        $user = Auth::user();
+        $bookmark = Bookmark::where('user_id', $user->id)
+            ->where('book_id', $book->id)
+            ->first();
+
+        if ($bookmark) {
+            $bookmark->delete();
+            return redirect()->back()->with('message', 'Bookmark removed successfully!');
+        }
+
+        Bookmark::create([
+            'user_id' => $user->id,
+            'book_id' => $book->id,
+        ]);
+
+        return redirect()->back()->with('message', 'Bookmarked successfully!');
+    }
 }
