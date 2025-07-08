@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container px-0">
-        <a class="navbar-brand fw-bold" href="{{ url('home') }}">Edu Resource Recommender</a>
+        <a class="navbar-brand fw-bold fs-4" href="{{ url('home') }}">Edu Resource Recommender</a>
         <!-- Mobile view nav wrap -->
         <div class="ms-auto d-flex align-items-center order-lg-3">
             <div class="d-flex gap-2 align-items-center">
@@ -54,9 +54,6 @@
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route('bookmarks') }}">My Bookmark</a>
-                        </li>
-                        <li>
-                            <hr class="mx-3" />
                         </li>
                         <li>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
