@@ -67,9 +67,10 @@
             <div class="row">
                 <div class="col-xl-10 col-md-10 col-12 mx-auto">
                     <div class="d-flex flex-column gap-2 text-center mb-xl-7 mb-5">
-                        <h2 class="h1 mb-0">Explore Our Latest Courses</h2>
+                        <h2 class="h1 mb-0">Explore Your Interests</h2>
                         <p class="mb-0 px-xl-5">
-                            Whether you're just getting started, looking to grow your skills, or exploring a new passion, our latest courses are designed to help you stay ahead and succeed.
+                            Discover a world of knowledge through our diverse range of
+                            resources.
                         </p>
                     </div>
                 </div>
@@ -121,10 +122,9 @@
             <div class="row">
                 <div class="col-lg-6 col-md-8 col-12 mx-auto">
                     <div class="d-flex flex-column gap-2 text-center mb-xl-7 mb-5">
-                        <h2 class="mb-0 h1">Trending Now Courses</h2>
+                        <h2 class="mb-0 h1">Explore Our Latest Courses</h2>
                         <p class="mb-0">
-                            Whether you want to advance your career in Artificial Intelligence, getting started in Ai, or
-                            explore a passion, we have the right course for you.
+                            Whether you're just getting started, looking to grow your skills, or exploring a new passion, our latest courses are designed to help you stay ahead and succeed.
                         </p>
                     </div>
                 </div>
