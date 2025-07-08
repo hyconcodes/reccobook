@@ -49,7 +49,7 @@
                 <div class="col-lg-6 col-12 d-none d-lg-block">
                     <div class="text-center position-relative">
                         <img
-                            src="{{ asset('assets/img/laptop.png') }}"
+                            src="{{ asset('assets/img/edubook.png') }}"
                             alt="hero"
                             class="position-relative z-3" />
                         <div class="position-absolute top-0 end-0 bottom-0">
@@ -67,10 +67,9 @@
             <div class="row">
                 <div class="col-xl-10 col-md-10 col-12 mx-auto">
                     <div class="d-flex flex-column gap-2 text-center mb-xl-7 mb-5">
-                        <h2 class="h1 mb-0">Explore Your Interests</h2>
+                        <h2 class="h1 mb-0">Explore Our Latest Courses</h2>
                         <p class="mb-0 px-xl-5">
-                            Discover a world of knowledge through our diverse range of
-                            resources.
+                            Whether you're just getting started, looking to grow your skills, or exploring a new passion, our latest courses are designed to help you stay ahead and succeed.
                         </p>
                     </div>
                 </div>

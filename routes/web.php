@@ -142,11 +142,13 @@ Route::middleware(['auth', 'role:student'])->group(function () {
             ['path' => request()->url(), 'query' => request()->query()]
         );
 
-        // For trending resources?
-        $book = Books::whereIn('catergory_id', [2, 3])->get()->each(function ($item) {
+        // For trending resources
+        // Get first 3 books from user interests and mark as type 'book'
+        $book = Books::whereIn('catergory_id', $userInterest->pluck('id'))->take(3)->get()->each(function ($item) {
             $item->type = 'book';
         });
-        $video = Video::whereIn('catergory_id', [2, 3])->get()->each(function ($item) {
+        // Get first 3 videos from user interests and mark as type 'video'
+        $video = Video::whereIn('catergory_id', $userInterest->pluck('id'))->take(3)->get()->each(function ($item) {
             $item->type = 'video';
         });
         $trending = $book->merge($video)->shuffle();
