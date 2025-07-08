@@ -25,16 +25,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('auth.login');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/storage-link', function () {
     Artisan::call('storage:link');
     return 'Storage link has been created';
 });
 Route::post('logout', [AuthController::class, 'destroy'])->name('logout');
-Route::get('/', [AuthController::class, 'login']);
+Route::get('/login', [AuthController::class, 'login']); // change to login route insetad of '/'
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'registerAction']);
 Route::post('/login', [AuthController::class, 'loginAction']);
